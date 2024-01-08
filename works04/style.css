@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: none;  /* 本来のカーソルは消す */
+}
+
+canvas {
+  margin: 0px auto;
+}
+
+.cursor {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+}
+
+.cursor {
+  width: 300px;
+  height: 300px;
+  background: url(./fish.png) no-repeat center/contain;
+  /* z-index: 1001; */
+  transform-origin: center;
+}
